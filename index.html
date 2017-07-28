@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>New York Times Search</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  </head>
+
+  <body>
+  <div class="all">
+
+    <!-- Bootstrap Container will hold everything. -->
+    <div class="container">
+
+      <!-- Jumbotron holds the title section. -->
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row vertical-center">
+            <div class="col-lg-12">
+              <h1 class="main-title" id="main-title-1">New York Times Search</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panels are being used to hold various sections. -->
+      <!-- Question 1 -->
+      <div class="row">
+        <div class="col-lg-12">    
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <!-- This h3 section will hold the question being asked -->
+              <h3 class="panel-title panel-description"><strong>Search Parameters</strong></h3>
+            </div>
+
+            <div class="panel-body search-field">
+              <form id="search-form">
+                <ul>
+                  <li>
+                    <label for="search-term">Search Term:</label>
+                    <input type="text" id="search-term" name="search-term" placeholder="Blac Chyna, Kansas City Royals, Quantum Computing, etc." required="required">
+                  </li>
+                  <li>
+                    <label for="records-to-retrieve">Number of Records to Retrieve:</label>
+                    <select class="form-control" id="records-to-retrieve" name="records-to-retrieve" placeholder="10" required="required">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="start-year">Start Year (optional)</label>
+                    <input type="number" id="start-year" name="start-year" required="optional">
+                  </li>
+                  <li>
+                    <label for="end-year">End Year (optional)</label>
+                    <input type="number" id="end-year" name="end-year" required="optional">
+                  </li>                  
+                </ul>
+                <input type="submit">
+                <input type="clear">
+              </form>         
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Adds a link to jQuery and the JavaScript file. Loaded at the bottom so it waits for the HTML content to display first. If you put this at the top it will crash, because the HTML IDs won't exist yet.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="api.js"></script>
+
+  </body>
+
+</html>
+
