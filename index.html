@@ -59,24 +59,26 @@
                   </li>
                   <li>
                     <label for="start-year">Start Year (optional)</label>
-                    <input type="number" class="form-control" id="start-year" name="start-year" required="optional">
+                    <input type="number" class="form-control" id="start-year" name="start-year" placeholder="yyyymmdd" required="optional">
                   </li>
                   <li>
                     <label for="end-year">End Year (optional)</label>
-                    <input type="number" class="form-control" id="end-year" name="end-year" required="optional">
+                    <input type="number" class="form-control" id="end-year" name="end-year" placeholder="yyyymmdd" required="optional">
                   </li>                  
-                </ul>
-                <input type="submit">
-                <input type="clear">
+                </ul>               
+      
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="button">
+                      <input class="submit-parameters" id="submit-button" onClick="submitParameters()" type="submit" value="Submit" />
+                    </div>
+                    <button type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Clear
+                    </button>                  
+                  </div>
+                </div>
               </form>         
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="submitter">
-            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
           </div>
         </div>
       </div>
