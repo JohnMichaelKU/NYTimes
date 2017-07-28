@@ -1,0 +1,15 @@
+
+/****** HEADER ******/
+
+.jumbotron{
+	background-color: #00284d;
+	font-style: ;
+	color: white;
+	text-align: center;
+}
+
+.panel-default>.panel-heading {
+	background-color: #00284d;
+	color: white;
+
+}
