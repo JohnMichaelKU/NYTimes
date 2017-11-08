@@ -17,7 +17,7 @@ $("#submit-button").click(function() {
   		console.log(data);
   		for(i = 0; i < recordsDisplayed; i++) {
   			$("#articles-form").append('<a>' + data.response.docs[i].web_url + '</a>')
-  			.append('<br>' + data.response.docs[i].lead_paragraph)
+  			.append('<br>' + data.response.docs[i].snippet)
   			.append('<br><br>')
   		}
 
